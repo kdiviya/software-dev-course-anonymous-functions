@@ -44,7 +44,7 @@ let filteredTask = todos.filter(function(todo){
   return todo.completed === false;
 });
 
-console.log("Incompleted Task:");
+console.log("Incomplete Tasks:");
 console.log(filteredTask);
   /*
   🔹 Task 2: Sort Tasks by Priority
@@ -108,7 +108,7 @@ console.log(combineTask);
   // console.log("All Tasks Completed:", ...);
   // console.log("Sorted Incomplete Tasks:", ...);
   /* OUTPUT:
-  Incompleted Task:
+  Incomplete Tasks:
 [
   { task: 'Wash the dishes', completed: false, priority: 3 },
   { task: 'Buy groceries', completed: false, priority: 2 },
@@ -129,4 +129,10 @@ All Tasks Completed:
   { task: 'Buy groceries', completed: true, priority: 2 },
   { task: 'Study JavaScript', completed: true, priority: 1 },
   { task: 'Walk the dog', completed: true, priority: 2 }
+Sorted Incomplete Tasks:
+[
+  { task: 'Buy groceries', completed: false, priority: 2 },
+  { task: 'Walk the dog', completed: false, priority: 2 },
+  { task: 'Wash the dishes', completed: false, priority: 3 }
+]
 ]*/
